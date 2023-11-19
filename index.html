@@ -3,7 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="calculator">
+      <div class="main-screen"></div>
+      <div class="main-buttons">
+        <div class="action-buttons">
+          <button class="action-btn">Clear</button>
+          <button class="action-btn">Delete</button>
+        </div>
+        <div class="all-numbers">
+          <div class="num-rows">
+            <button id="digit-7" class="num-btn" value="7">7</button>
+            <button id="digit-8" class="num-btn" value="8">8</button>
+            <button id="digit-9" class="num-btn" value="9">9</button>
+            <button id="divide" class="num-btn" value="/">÷</button>
+          </div>
+          <div class="num-rows">
+            <button id="digit-4" class="num-btn" value="4">4</button>
+            <button id="digit-5" class="num-btn" value="5">5</button>
+            <button id="digit-6" class="num-btn" value="6">6</button>
+            <button id="multiply" class="num-btn" value="*">×</button>
+          </div>
+          <div class="num-rows">
+            <button id="digit-1" class="num-btn" value="1">1</button>
+            <button id="digit-2" class="num-btn" value="2">2</button>
+            <button id="digit-3" class="num-btn" value="3">3</button>
+            <button id="minus" class="num-btn" value="-">-</button>
+          </div>
+          <div class="num-rows">
+            <button id="decimal" class="num-btn" value=".">.</button>
+            <button id="digit-0" class="num-btn" value="0">0</button>
+            <button id="equal" class="num-btn" value="=">=</button>
+            <button id="plus" class="num-btn" value="+">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-txt">Nikola Gedovic</p>
+      <a href="https://github.com/NikolaGedovic">
+        <i class="github-icon fa-brands fa-github"></i>
+      </a>
+    </footer>
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+  </body>
 </html>
