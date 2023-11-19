@@ -1,0 +1,135 @@
+html {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 100%; */
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  background-color: #9EB8D9;
+}
+
+/* Main Calculator */
+.calculator {
+  width: 500px;
+  height: 700px;
+  background-color: #394867;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 9px 2px rgba(66, 68, 90, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+}
+
+.main-screen {
+  width: 82%;
+  height: 18%;
+  background-color: #F1F6F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: inset -5px 5px 15px #aaaaaa,
+    inset 5px -5px 15px #ffffff;
+}
+
+/* Button Section */
+
+.main-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  height: 520px;
+}
+
+.action-buttons {
+  padding-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.action-btn {
+  width: 187px;
+  height: 70px;
+  font-size: 25px;
+  background-color: #F1F6F9;
+  border: none;
+  border-radius: 15px;
+}
+
+.action-btn:hover {
+  color: #F1F6F9;
+  background-color: #9BA4B5;
+  cursor: pointer;
+}
+
+.action-btn:active {
+  background-color: #212A3E;
+}
+
+.all-numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 450px;
+  gap: 3px;
+}
+
+.num-btn {
+  width: 100px;
+  height: 100px;
+  font-size: 25px;
+  background-color: #F1F6F9;
+  border: none;
+  border-radius: 4px;
+  border-radius: 15px;
+}
+
+.num-btn:hover {
+  color: #F1F6F9;
+  background-color: #9BA4B5;
+  cursor: pointer;
+}
+
+.num-btn:active {
+  background-color: #212A3E;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.github-icon {
+  color: #232D3F;
+}
+
+.footer-txt {
+  color: #232D3F;
+}
