@@ -19,3 +19,21 @@ function divide(num1, num2) {
 const firstNum = 0;
 const operator = '+';
 const secondNum = 0;
+
+// Functionality of Calculator
+function operate(operator, num1, num2) {
+  const operators = {
+    '+': add,
+    '-': subtract,
+    '*': multiply,
+    '/': divide
+  };
+
+  const operation = operators[operator];
+
+  if (operation) {
+    return operation(num1, num2);
+  } else {
+    return 'Invalid operator';
+  }
+}
