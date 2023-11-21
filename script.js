@@ -37,3 +37,12 @@ function operate(operator, num1, num2) {
     return 'Invalid operator';
   }
 }
+
+// Calculator Display
+const buttons = document.querySelectorAll('.num-btn');
+for (let i = 0; i < buttons.length; i++) {
+  let button = buttons[i];
+  button.addEventListener('click', () => {
+    document.querySelector('#display').innerHTML += button.innerHTML;
+  })
+}
