@@ -34,9 +34,11 @@ body {
 .main-screen {
   width: 82%;
   height: 18%;
+  padding-right: 15px;
+  font-size: 30px;
   background-color: #F1F6F9;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   border-radius: 15px;
   margin-top: 30px;
