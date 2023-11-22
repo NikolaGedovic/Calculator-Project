@@ -42,9 +42,21 @@ function handleNumberClick(number) {
 
 // Function to handle operator button clicks
 function handleOperatorClick(selectedOperator) {
+  if (firstNumber !== '' && operator !== '' && secondNumber !== '') {
+    const result = operate(operator, parseFloat(firstNumber), parseFloat(secondNumber));
+    updateDisplay(result);
+
+    // Reset the calculator values for the next operation
+    firstNumber = result.toString();
+    operator = '';
+    secondNumber = '';
+  }
+
+  // Set the new operator
   operator = selectedOperator;
   updateDisplay(operator);
 }
+
 
 // Function to handle "=" button click
 function handleEqualClick() {
@@ -58,6 +70,7 @@ function handleEqualClick() {
     secondNumber = '';
   }
 }
+
 
 // Function to check if a value is a number
 function isNumber(value) {
